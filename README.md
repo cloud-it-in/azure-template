@@ -1,5 +1,5 @@
 # azure-template
-Collection of Azure .jason template for deployments
+Collection of Azure .json template for deployments
 
 # Vnet with 3 subnets
 # .json deployment template ( vnet with 3 subnet)
