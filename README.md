@@ -2,7 +2,7 @@
 Collection of Azure .jason template for deployments
 
 # Vnet with 3 subnets
-# .jason deployment template ( vnet with 3 subnet)
+# .json deployment template ( vnet with 3 subnet)
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
