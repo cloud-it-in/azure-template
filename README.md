@@ -134,3 +134,12 @@ In the GitHub account , create a repository and add a file named install_web.sh1
 apt-get update -y && apt-get upgrade -y
 
 apt-get install -y nginx
+
+
+# Alternate method is cloud-init for Linux VM
+make a yaml script file
+
+#cloud-config
+package_upgrade: true
+packages:
+  - nginx
