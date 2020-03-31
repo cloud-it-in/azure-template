@@ -143,3 +143,7 @@ make a yaml script file
 package_upgrade: true
 packages:
   - nginx
+  
+  
+# Poweshell DSC  (Desired state configuration)
+Make a Poweshell Scrift fule PS1
