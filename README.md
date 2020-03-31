@@ -106,3 +106,15 @@ Collection of Azure .json template for deployments
     ]
 }
 
+
+
+# Custom Script Extensions - To Install ISS on VM through Custome Script Extentions
+
+Create a new file as "InstallIIS.ps1" and place the following commands in the file:
+
+import-module servermanager
+add-windowsfeature web-server -includeallsubfeature
+>> Go to Extention >> Choose Custom Script >> ( Poweshell Custom Script"
+>> Attach and upload the file and execute.
+
+** Please note of the scripts have reboots as a part of the script, it is not ideal to do it through extention. The alternate ways would be through DSC ( Desired State Configuration) or use other tools like Chef / Puppet.
