@@ -118,3 +118,19 @@ add-windowsfeature web-server -includeallsubfeature
 >> Attach and upload the file and execute.
 
 ** Please note of the scripts have reboots as a part of the script, it is not ideal to do it through extention. The alternate ways would be through DSC ( Desired State Configuration) or use other tools like Chef / Puppet.
+
+
+
+# Custom Script Extensions for Linux Virtual Machines - Practice commands
+
+// Apply custom script extensions for a Linux Virtual Machine
+
+az vm extension set --resource-group azuredemo --vm-name linuxvm --name customScript --publisher Microsoft.Azure.Extensions --settings customscript.json
+
+This chapter has the configuration file attached as a resource. Please ensure you have a GitHub account and attach the URL for your account.
+
+In the GitHub account , create a repository and add a file named install_web.sh1 that has the following contents
+
+apt-get update -y && apt-get upgrade -y
+
+apt-get install -y nginx
